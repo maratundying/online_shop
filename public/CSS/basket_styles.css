@@ -1,0 +1,108 @@
+#content{
+	display: flex;
+	/*justify-content: center;*/
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+#contentBody>*{
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+#contentBody{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.thisProduct{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width:300px;
+	height:470px;
+	border:1px solid grey;
+	border-radius: 10px;
+	padding:10px;
+}
+
+.thisProduct img{
+	object-fit: cover;
+	height:240px;
+	width:220px;
+	box-shadow: 1px 2px 5px grey;
+	margin-bottom: 7px;
+}
+
+.thisProduct p{
+	width:200px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-align: center;
+}
+
+.basket{
+	position:relative;
+	right:-215px;
+	top:-34px;
+	font-size: 24px !important;
+	color:red;
+	cursor: pointer;
+}
+
+#basketCount{
+	width:40px;
+}
+
+#thisProduct i{
+	font-size: 18px;
+}
+
+#buttons{
+	text-align: center;
+}
+
+.buy{
+	color:lime;
+}
+
+#removeFromCard{
+	display: none;
+	border:none;
+	background-color: red;
+	color:white;
+	border-radius: 10px;
+	padding:4px 6px;
+}
+
+#removeFromCard:focus{
+	outline: none;
+}
+
+.thisProduct:hover>#removeFromCard{
+	display: block;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media screen and (max-device-width:375px) and (min-device-width:320px), screen and (max-width:375px) and (min-width: 320px){
+	.basket{
+		position:absolute;
+		/*right:200px;*/
+		left:20px;
+		top:87px;
+		font-size: 20px !important;
+		color:red;
+		cursor: pointer;
+	}
+
+}

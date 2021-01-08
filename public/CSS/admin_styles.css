@@ -1,0 +1,41 @@
+.basket{
+	position:relative;
+	right:-215px;
+	top:-34px;
+	font-size: 24px !important;
+	color:red;
+	cursor: pointer;
+}
+
+#ul{
+	display: flex;
+	width:100%;
+	justify-content: center;
+}
+
+#ul li{
+	margin-left: 10px;
+	list-style-type: none;
+	cursor: pointer;
+	padding:10px;
+}
+
+#ul li:hover{
+	box-shadow: 1px 1px 3px grey;
+	background-color:grey;
+	color:white;
+	transition-duration: 0.5s
+}
+
+@media screen and (max-device-width:375px) and (min-device-width:320px), screen and (max-width:375px) and (min-width: 320px){
+	.basket{
+		position:absolute;
+		/*right:200px;*/
+		left:20px;
+		top:87px;
+		font-size: 20px !important;
+		color:red;
+		cursor: pointer;
+	}
+
+}
